@@ -10,4 +10,6 @@ Rails.application.routes.draw do
   resources :board_games, only: [:index, :show]
   # Defines the root path route ("/")
   # root "posts#index"
+
+  root "board_games#index"
 end
