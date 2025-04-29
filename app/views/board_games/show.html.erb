@@ -1,8 +1,14 @@
-<h1><%= @board_game.title %></h1>
+<div style="width: 60%; margin: auto; background-color: #fff0f5; padding: 20px; border: 2px solid pink; border-radius: 10px; box-shadow: 0 0 10px pink; font-size: 18px; font-family: Georgia, serif;">
 
-<p><strong>Category:</strong> <%= @board_game.category %></p>
-<p><strong>Players:</strong> <%= @board_game.min_players %> - <%= @board_game.max_players %></p>
-<p><strong>Publisher:</strong> <%= @board_game.publisher %></p>
-<p><strong>Description:</strong> <%= @board_game.description %></p>
+  <h1 style="text-align: center; color: #d6336c;"><%= @board_game.title %></h1>
 
-<%= link_to 'Back to Board Games', board_games_path %>
+  <p><strong style="color: #8b005d;">Category:</strong> <%= @board_game.category %></p>
+  <p><strong style="color: #8b005d;">Players:</strong> <%= @board_game.min_players %> - <%= @board_game.max_players %></p>
+  <p><strong style="color: #8b005d;">Publisher:</strong> <%= @board_game.publisher %></p>
+  <p style="margin-bottom: 30px;"><strong style="color: #8b005d;">Description:</strong> <%= @board_game.description %></p>
+
+  <div style="text-align: center;">
+    <%= link_to 'Back to Board Games', board_games_path, style: "color: white; background-color: #d6336c; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-family: Georgia, serif;" %>
+  </div>
+
+</div>
