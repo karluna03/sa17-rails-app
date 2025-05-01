@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   # root "posts#index"
 
   root "board_games#index"
-end
 
-get '/seed_data', to: 'application#seed_data'
+  get '/seed_data', to: 'application#seed_data'
+
+end
