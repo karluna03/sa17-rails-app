@@ -13,6 +13,4 @@ Rails.application.routes.draw do
 
   root "board_games#index"
 
-  get '/seed_data', to: 'application#seed_data'
-
 end
