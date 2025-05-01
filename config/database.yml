@@ -78,7 +78,5 @@ test:
 # for a full overview on how database connection configuration can be specified.
 #
 production:
-  <<: *default
-  database: board_game_library_production
-  username: board_game_library
-  password: <%= ENV["BOARD_GAME_LIBRARY_DATABASE_PASSWORD"] %>
+  url: <%= ENV["DATABASE_URL"] %>
+
